@@ -1,0 +1,26 @@
+from itertools import islice
+
+n, common = int(input()), []
+socks = list(map(int, input().split()))
+for i in range(n):
+    for j in range(i + 1, n, 1):
+        if socks[i] == socks[j] and socks[i] != 0:
+            common.append(i + 1)
+            common.append(j + 1)
+            socks[i] = 0
+            socks[j] = 0
+breakLength = []
+for _ in range(len(common) // 2):
+    breakLength.append(2)
+common = iter(common)
+common = [list(islice(common, lenght))
+          for lenght in breakLength]
+print(len(common))
+for i in common:
+    print(i[0],i[1])
+
+# this is just an exmaple for breaking a list as you see 
+# 1. from itertool import islice 
+# 2. give break_length to list 
+# 3. use list comperention list(isLice(my_list,break_lengh)) for break_lenght in break_lengths]
+# Done !!!
