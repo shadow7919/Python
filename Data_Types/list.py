@@ -26,9 +26,6 @@ sort --> sort the list
 get a copy of list ---> if you don't want to change org list
 
 
-print a list with out bracket
-You can do it with *name , sep
-or you can use " ".join()
 """
 
 name = ('asghar', 'reza','amirhossein')
@@ -45,8 +42,3 @@ print(list[1:4])
 cop = list.copy()
 cop.clear()
 print(list)
-numbers = [1,2,3,4,5]
-print(*name,sep=', ') # or
-print(', '.join(name))
-# for number you just have first
-print(*numbers,sep=' and ')
