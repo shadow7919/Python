@@ -5,8 +5,7 @@ tuple can have anything inside
 You can add two tuple by +
 You cant del or add to a tuple after it initialized
 
-all -->  return true if all element are true
-any -->  return true if any element are true
+
 enumerate --> make each element a tuple which the first index is iterate number
 tuple --> make iterate to tuple
 max , min , sum ,sorted
