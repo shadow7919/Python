@@ -9,4 +9,9 @@ It's more readable
 
 It want to iterat or asign something without use it use _ like variable
 
+swap in python vs swap in java 
+x = 2 , y = 7 
+x , y = y , x --> python 
+x = x ^ y ^( y = x) --> java 
+x = 7 , y = 2 
 """
