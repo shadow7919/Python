@@ -4,22 +4,24 @@ in c and java ---> maximum =  a>b ? a : b
 in python ---> maximum = a if a>b else b
 
 
-                                end in print
-in python3 default after print it has new line
-with ,end = ' '  you can change it '\t','\b'
+also you can use tuple or dict or lamda 
+I see tuple more useful
+True = (x,y)[condition]
 
-
-								sep in print
-this will show how you want to separate the args to print
 """
-# a, b, maximum = 4, 9, 0
-# if a > b:
-#     maximum = a
-# else:
-#     maximum = b
-# print(maximum)
-# maximum = a if a > b else b
-# print(maximum)
-print("hello man ", end='t')
-print("this is it ")
-print(1,2,3,4,5,sep='\t',end='\t finished')
+a, b, maximum = 4, 9, 0
+if a > b:
+    maximum = a
+else:
+    maximum = b
+print(maximum)
+maximum = a if a > b else b
+print(maximum)
+
+a, b = 10, 20
+# tuple
+print((b, a)[a < b])
+# dictionary
+print({True: a, False: b}[a < b])
+# lamda 
+x = (lambda: a, lambda: b)[a < b]
