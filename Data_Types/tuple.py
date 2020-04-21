@@ -6,7 +6,6 @@ You can add two tuple by +
 You cant del or add to a tuple after it initialized
 
 
-enumerate --> make each element a tuple which the first index is iterate number
 tuple --> make iterate to tuple
 max , min , sum ,sorted
 
